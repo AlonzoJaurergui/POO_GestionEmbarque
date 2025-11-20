@@ -63,8 +63,51 @@ public class EmbarqueDesembarque {
                 
         dao.create(fly);   
     }
-    public static void main(String[] args) throws IOException{        
-        do {
+    public static void main(String[] args) throws IOException{ 
+        int opcion;
+        do {            
+            System.out.println("\n#########SISTEMA DE CHECK-IN###########");
+            System.out.println("1. Registro vuelo");
+            System.out.println("2. Registro de pasajero");
+            System.out.println("3. Registro Check-in");
+            System.out.println("4. Listar vuelos");
+            System.out.println("5. Buscar pasajero por dni");
+            System.out.println("6. Eliminar pasajero por dni");
+            System.out.println("7. Registro de equipaje");
+            System.out.println("8. Salir");
+            System.out.println("Opcion: ");            
+            opcion= Integer.parseInt(dato.nextLine());
+                        
+            switch (opcion) {
+                case 1:{
+                    agregaVuelos();
+                }break;
+                case 2:{
+                    
+                }break;
+                case 3:{
+                    
+                }break;
+                case 4:{
+                    imprimevuelos(dao.list());
+                }break;
+                case 5:{
+                    
+                }break;
+                case 6:{
+                    
+                }break;
+                case 7:{
+                    
+                }break;
+                case 8:{
+                    
+                }break;
+                default:
+                    throw new AssertionError();
+            }
+        } while (true);
+       /* do {
             System.out.print("Desea agregar un vuelo? (si/no) : ");
             opcion = dato.nextLine();
             if (opcion.equals("si")) {
@@ -81,7 +124,7 @@ public class EmbarqueDesembarque {
             }
             
         } while (!opcion.equals("no"));
-        
+        */
        
     }
 }
