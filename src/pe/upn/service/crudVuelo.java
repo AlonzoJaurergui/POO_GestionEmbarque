@@ -6,10 +6,6 @@ package pe.upn.service;
 
 import java.util.LinkedList;
 
-/**
- *
- * @author Alonzo
- */
 public interface crudVuelo <V> {
     public void create(V obj);
     public void read(int id);

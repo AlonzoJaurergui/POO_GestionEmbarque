@@ -9,13 +9,23 @@ package pe.upn.poo;
  * @author Alonzo
  */
 public class Equipaje {
-    /*- idEquipaje : int
-- peso       : double
-- tipo       : String
-------------------------------
-*/
     private int idEquipaje;
     private double peso;
-    
-    
+    private String tipo; // "Mano", "Bodega", etc.
+
+    public Equipaje(){}
+    public Equipaje(int idEquipaje, double peso, String tipo) {
+        this.idEquipaje = idEquipaje;
+        this.peso = peso;
+        this.tipo = tipo;
+    }
+
+    public int getIdEquipaje() { return idEquipaje; }
+    public void setIdEquipaje(int idEquipaje) { this.idEquipaje = idEquipaje; }
+
+    public double getPeso() { return peso; }
+    public void setPeso(double peso) { this.peso = peso; }
+
+    public String getTipo() { return tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
 }
